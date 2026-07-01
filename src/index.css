@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --green: #1d9e75;
+  --green-soft: #e8f8f2;
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --border: #e8eaed;
+  --text1: #111827;
+  --text2: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text1);
+  -webkit-font-smoothing: antialiased;
+}
+
+input, select, button, textarea {
+  font-family: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--green) !important;
+  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.1);
+}
